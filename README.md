@@ -1,4 +1,4 @@
-#  [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-url]][daviddm-image]
+#  git-repo-url [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-url]][daviddm-image]
 
 > create github https or git-ssh url from username and repo
 
@@ -9,28 +9,55 @@
 $ npm install --save git-repo-url
 ```
 
-
 ## Usage
 
-```js
-var git-repo-url = require('git-repo-url');
+### JavaScript
 
-git-repo-url('Rainbow');
+```js
+var https = require('git-repo-url').https;
+
+https('yashprit', 'generator-bode'); 
+
+//=> https://github.com/yashprit/generator-bode.git
 ```
+
+### command line
 
 ```sh
 $ npm install --global git-repo-url
-$ git-repo-url --help
+$ git-repo-url --t ssh --u yashprit --r generator-bode
+
+#result => git@github.com:yashprit/generator-bode.git
 ```
 
+## Methods
 
-##Report Issue 
-[issue-url]
+```js
+var gitRepoUrl = require('git-repo-url');
 
+```
+
+### ssh([username], [reponame])
+
+get ssh url from username and reponame 
+
+### get([username], [reponame])
+
+get https url from username and reponame
+
+
+## Run Test
+```sh
+npm test
+```
+
+## Contribute or Report Issue
+For bugs and feature requests, [please create an issue][issue-url].
 
 ## License
 
 MIT © [Yashprit](yashprit.github.io)
+
 
 [issue-url]: https://github.com/yashprit/git-repo-url/issues
 [npm-url]: https://npmjs.org/package/git-repo-url

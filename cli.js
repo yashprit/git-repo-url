@@ -1,17 +1,9 @@
 #!/usr/bin/env node
 
 'use strict';
-var meow = require('meow');
-var gitRepoUrl = require('./lib');
+var argv = require('minimist')(process.argv.slice(2));
+var gitRepoUrl = require('./');
 
-var cli = meow({
-  help: [
-    'Usage',
-    '  git-repo-url <input>',
-    '',
-    'Example',
-    '  git-repo-url Unicorn'
-  ].join('\n')
-});
+var url = gitRepoUrl[argv.t](argv.u, argv.r);
 
-gitRepoUrl (cli.input[0]);
+console.log(url)
