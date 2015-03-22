@@ -1,6 +1,6 @@
 {
   "name": "git-repo-url",
-  "version": "0.0.0-alpha",
+  "version": "0.0.0-beta",
   "description": "create github https or git-ssh url from username and repo",
 
   "bugs": {
