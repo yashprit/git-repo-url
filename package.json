@@ -1,0 +1,43 @@
+{
+  "name": "git-repo-url",
+  "version": "0.0.0-alpha",
+  "description": "create github https or git-ssh url from username and repo",
+
+  "bugs": {
+    "url": "yashprit/git-repo-url/issues"
+  },
+  "author": {
+    "url": "yashprit.github.io",
+    "name": "Yashprit",
+    "email": "yashprit@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "yashprit/git-repo-url"
+  },
+  "license": "MIT",
+  "files": [
+    "lib/index.js",
+    "cli.js"
+  ],
+  "keywords": [
+    "git-repo-url",
+    "git",
+    "http",
+    "repo",
+    "username",
+    "github"
+  ],
+  "dependencies": {
+    "minimist": "^1.1.1"
+  },
+  "devDependencies": {
+    "mocha": "*"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "bin": {
+    "git-repo-url": "cli.js"
+  }
+}
