@@ -41,7 +41,7 @@ var gitRepoUrl = require('git-repo-url');
 
 get ssh url from username and reponame 
 
-### get([username], [reponame])
+### https([username], [reponame])
 
 get https url from username and reponame
 
