@@ -1,6 +1,6 @@
 {
   "name": "git-repo-url",
-  "version": "0.0.0-beta",
+  "version": "0.1.0",
   "description": "create github https or git-ssh url from username and repo",
 
   "bugs": {
@@ -29,10 +29,10 @@
     "github"
   ],
   "dependencies": {
-    "minimist": "^1.1.1"
+    "minimist": "^1.2.0"
   },
   "devDependencies": {
-    "mocha": "*"
+    "mocha": "^3.2.0"
   },
   "scripts": {
     "test": "mocha"
